@@ -5,8 +5,9 @@ import (
     "fmt"
     "os"
 )
+
 func main() {
-    csvFilename := flag.String("csv", "problems.csv", "A csv file in the format of 'question,answer'")
+  csvFilename := flag.String("csv", "problems.csv", "A csv file in the format of 'question,answer'")
     flag.Parse()
 
     file, err := os.Open(*csvFilename)
